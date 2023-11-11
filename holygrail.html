@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<hmtl>
+<head>
+    <title>Holy Grail</title>
+    <style>
+        .grid {
+            display: grid;
+            grid-tempplate-columns: 200px 1fr 200px;
+            grid-template-rows: auto 1fr auto;
+            gap: 5px;
+            height: 90vh;
+        }
+        header, footer {
+            grid-column: 1 / 4;
+            height: 13vh;
+        }
+        header, aside, article, footer {
+            border-style: solid;
+            background: silver;
+            font-size: 2em;
+            text-align: center;
+        }
+        header {
+            background-color: rgb(15, 105, 195);
+        }
+        footer {
+            background-color: rgb(15, 105, 195);
+        }
+        aside {
+            background-color: rgb(5, 86, 78);
+        }
+        article {
+            background-color: rgb(127, 85, 211);
+        }
+    </style>
+</head>
+<body>
+    <div class="grid">
+        <header>Header</header>
+        <aside>Left</aside>
+        <article>Article</article>
+        <aside>Right</aside>
+        <footer>Footer</footer>
+    </div>
+</body>
+</hmtl>
